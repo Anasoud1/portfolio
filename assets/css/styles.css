@@ -846,6 +846,10 @@ img {
   row-gap: 1.5rem;
 }
 
+@media (max-width:776px) {
+  
+}
+
 .footer__link:hover {
   color: var(--first-color-lighter);
 }
@@ -1184,5 +1188,38 @@ img {
   }
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:775px) {
+  .about,
+  .about,
+  .skills,
+  .portfolio,
+  .contact,
+  .footer{
+    width: 100%;
+  }
+  .footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__links{
+    flex-direction: row;
+    gap: 20px;
+  }
+  .skills__container{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 40px;
+    /* align-items: center; */
+    /* justify-items: center; */
+  }
+  
+}
+@media (max-width:400px){
+  .footer__container{
+    flex-direction: column;
+    gap: 20px;
   }
 }
