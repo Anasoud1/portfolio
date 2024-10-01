@@ -1,561 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 
-    <!--==================== UNICONS ====================-->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    
+    <title>Porfolio</title>
+</head>
+<body class="font-Outfit dark:bg-darkTheme dark:text-white">
 
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- navbar section -->
+    
+    <div class="fixed w-full -z-10 opacity-20 dark:hidden">
+        <img src="./dist/images/header3-grad.webp" alt="header" class="w-full h-screen object-cover">
+        <!-- <img src="./dist/images/header-gradient.webp" alt="header" class="w-full h-screen object-cover "> -->
+    </div>
 
-    <title>Anas | Oudsassi</title>
-  </head>
-
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#home" class="nav__logo">AO</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i> Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> My Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact me
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-        <div class="nav__btns">
-          <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-
-            <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="-80"
-                    y="0"
-                    href="./assets/img/anas.png"
-                  />
-                </g>
-              </svg>
-            </div>
-
-            <div class="home__data">
-              <h1 class="home__title">Hi, I am</h1>
-              <h1 class="home__title">Anas</h1>
-              <h3 class="home__subtitle">Fullstack developer</h3>
-      
-              <p class="home__description">
-                Energetic full-stack developer with a passion for creating dynamic and engaging user experiences, 
-                skilled in both frontend and backend development.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me<i class="uil uil-message button__icon"></i>
-              </a>
-              <div style="margin-top: 1rem;">
-                <a
-                  href="https://www.linkedin.com/in/anas-oudsassi/"
-                  class="home__social-icon"
-                  target="_blank"
-                  
-                >
-                  <i class="uil uil-linkedin-alt"></i>
-                </a>
+    <nav id="nav" class="py-4 px-10 md:px-32 w-full fixed backdrop-blur-3xl z-50">
+       
+        <div class="flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold">AO.</a>
+            <ul id="navBorder" class="hidden md:flex border px-12 py-3 rounded-full shadow-sm 
+            space-x-10 dark:bg-black
+            bg-white bg-opacity-50 absolute left-1/2 transform -translate-x-1/2">
+                <li><a href="#home" class="hover:text-red-600">Home</a></li>
+                <li><a href="#about" class="hover:text-red-600">About</a></li>
+                <li><a href="#skills" class="hover:text-red-600">Skills</a></li>
+                <li><a href="#project" class="hover:text-red-600">Projects</a></li>
+            </ul>
+            <div class="flex items-center space-x-6">
+                <i onclick="toggleTheme()" class="ri-moon-line text-2xl cursor-pointer dark:hidden"></i>
+                <i onclick="toggleTheme()" class="ri-sun-line text-2xl cursor-pointer hidden dark:block"></i>
+                <button>
+                    <a href="#contact" class="hidden border px-6 py-2.5 rounded-full shadow-sm
+                    hover:shadow-lg lg:flex items-center gap-x-1
+                    dark:hover:bg-white dark:hover:text-black dark:transition ease-in-out">Contact <i class="ri-arrow-right-up-line text-xl"></i></a>
+                </button>
+                <button id="menu-btn" class="md:hidden">
+                    <i class="ri-menu-3-line text-2xl"></i>
+                </button>
                 
-                <a
-                  href="https://github.com/Anasoud1/"
-                  class="home__social-icon"
-                  target="_blank"
-                >
-                  <i class="uil uil-github-alt"></i>
-                </a>
-              </div>
-  
-
             </div>
-          </div>
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div>
         </div>
-      </section>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
-        <div class="about__container container grid">
-          <img src="./assets/img/about.jpg" alt="" class="about__img" />
-          <div class="about__data">
+        <!-- navbar section for mobile  -->
 
-            <p class="about__description">
-              Full-stack developer with experience building websites and web applications. 
-              I specialize in frontend development using Next.js, Tailwind CSS, and HTML. 
-              With a strong background in backend development.
+        <ul id="navbar" class="md:hidden hidden fixed top-16 inset-x-10 py-4 rounded-lg 
+        px-12 shadow-lg flex flex-col items-center space-y-4 justify-around
+        transition duration-500 z-10 bg-gray-50 dark:bg-darkHover dark:shadow-[0px_2px_10px_#fff]">
+
+            <li><a id="nav-btn" href="#home" class="hover:text-red-600">Home</a></li>
+            <li><a id="nav-btn" href="#about" class="hover:text-red-600">About</a></li>
+            <li><a id="nav-btn" href="#skills" class="hover:text-red-600">Skills</a></li>
+            <li><a id="nav-btn" href="#project" class="hover:text-red-600">Projects</a></li>
+            <button class="pb-2">
+                <a id="nav-btn" href="#contact" class="border px-6 py-2.5 rounded-full shadow-sm 
+                dark:hover:bg-white dark:hover:text-black dark:transition ease-in-out
+                 lg:flex items-center gap-x-1">Contact <i class="ri-arrow-right-up-line text-xl"></i></a>
+            </button>
+        </ul>
+    </nav>
+
+    <!-- home section -->
+
+    <section id="home" class="pt-40 px-20 sm:px-32">
+        <div class="flex flex-col items-center space-y-6">
+            <img src="./dist/images/profile-image.png" alt="profile" width="140">
+            <h5 class="text-xl font-Ovo">Hi! I'm Anas Oudsassi</h5>
+            <h1 class="text-4xl font-bold font-Ovo">Fullstack Developer</h1>
+            <p class="text-center leading-relaxed max-w-[600px] font-Ovo">
+                Energetic full-stack developer with a passion for creating dynamic and engaging user experiences, skilled in both frontend and backend development.
             </p>
+            <!-- <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+                <button>
+                    <a href="#contact" class="px-8 py-4 border rounded-full flex gap-x-2
+                    bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white items-center">contact me <i class="ri-arrow-right-line"></i></a>
+                </button>
+                <button>
+                    <a href="#contact" class="px-8 py-4 border-2 border-gray-400 border-solid rounded-full flex gap-x-2">my resume <i class="ri-download-2-line"></i></a>
+                </button>
+            </div> -->
+            <button>
+                <a href="#contact" class="px-8 py-4 rounded-full flex gap-x-2
+                bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white items-center">contact me <i class="ri-arrow-right-line"></i></a>
+            </button>
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <section id="about" class="pt-40 px-20 sm:px-32 text-center">
+        <h3 class="text-slate-500 font-Ovo dark:text-slate-300">Introduction</h3>
+        <h2 class="text-5xl font-semibold font-Ovo">About me</h2>
+        
+        <!-- <div class="mt-6 flex flex-col items-center justify-center space-y-8 md:text-left md:flex-row md:space-x-10"> -->
+        <div class="mt-16 grid gap-y-6 md:grid-cols-2 md:items-center md:gap-x-16">
+            <div class="flex justify-center  md:justify-end">
+                <img src="./dist/images/about.jpg" alt="about" class="rounded-lg max-w-[400px]">
+            </div>
+            <div class="flex flex-col space-y-8">
+                <p class="max-w-[500px] md:text-left font-Ovo">Full-stack developer with experience building websites and web applications. I specialize in frontend development using Next.js, Tailwind CSS, and HTML. With a strong background in backend development.</p>
+                <button class="self-center md:self-start">
+                    <a  download="" href="./dist/pdf/Anas_Oudsassi.pdf"
+                    class="px-8 py-4 border-2 border-gray-400 border-solid 
+                    rounded-full flex gap-x-2 dark:hover:bg-white dark:hover:text-black dark:transition 
+                    ease-in-out">my resume <i class="ri-download-2-line"></i></a>
+                </button>
+            </div>
             
-            <div class="about__buttons">
-              <a
-                download=""
-                href="./assets/pdf/Anas_Oudsassi.pdf"
-                class="button button--flex"
-              >
-                Download CV <i class="uil uil-download-alt button__icon"></i>
-              </a>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+    <!--  skills section  -->
 
-        <div class="skills__container container grid">
-          <!--==================== SKILLS 1 ====================-->
-          <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-brackets-curly skills__icon"></i>
-              <div>
-                <h1 class="skills__titles">Languages</h1>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">JavaScript</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Python</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">HTML</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">CSS</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">c</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-            </div>
-          </div>
+    <section id="skills" class="pt-40 px-20 sm:px-32">
+        <h3 class="text-slate-500 text-center font-Ovo dark:text-slate-300">Skills</h3>
+        <h2 class="text-5xl font-semibold text-center font-Ovo">My technical level</h2>
 
-          <!--==================== SKILLS 2 ====================-->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-palette skills__icon"></i>
-              <h1 class="skills__titles">Frameworks</h1>
-              <i class="uil uil-angle-down skills__arrow"></i>
+        <!-- <div class="pt-10 flex flex-col space-y-6 md:flex-row md:space-y-0 md:justify-center md:space-x-10"> -->
+        <div class="pt-16 grid gap-y-6 md:grid-cols-3 md:gap-x-6 md:px-10 lg:mx-20">
+            <div class="py-8 px-4 border-2 rounded-lg flex flex-col space-y-2 cursor-pointer 
+            hover:bg-lightHover  hover:shadow-black hover:-translate-y-1 transition ease-in-out
+            dark:hover:bg-darkHover dark:hover:shadow-white">
+                <i class="ri-code-s-slash-line text-2xl text-slate-500 font-bold dark:text-slate-300"></i>
+                <h5 class="font-bold">Languages</h5>
+                <p class="text-gray-600 text-sm dark:text-slate-300">JavaScript,Python, HTML, CSS and C</p>
             </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Next js</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Express js</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Tailwind Css</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Bootstrap</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Flask</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
+            <div class="py-8 px-4 border-2 rounded-lg flex flex-col space-y-2 cursor-pointer 
+            hover:bg-lightHover hover:shadow-black hover:-translate-y-1 transition ease-in-out
+            dark:hover:bg-darkHover dark:hover:shadow-white">
+                <i class="ri-file-code-line text-2xl text-slate-500 font-bold dark:text-slate-300"></i>
+                <h5 class="font-bold">Frameworks</h5>
+                <p class="text-gray-600 text-sm dark:text-slate-300">Next js, Express js, Tailwind Css, Bootstrap and Flask</p>
             </div>
-          </div>
-          <!--==================== SKILLS 3 ====================-->
-          <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-database skills__icon"></i>
-              <h1 class="skills__titles">Databases</h1>
-              <i class="uil uil-angle-down skills__arrow"></i>
+            <div class="py-8 px-4 border-2 rounded-lg flex flex-col space-y-2 cursor-pointer 
+            hover:bg-lightHover hover:shadow-black hover:-translate-y-1 transition ease-in-out
+            dark:hover:bg-darkHover dark:hover:shadow-white">
+                <i class="ri-database-2-fill text-2xl text-slate-500 font-bold dark:text-slate-300"></i>
+                <h5 class="font-bold">Databases</h5>
+                <p class="text-gray-600 text-sm dark:text-slate-300">MongoDB, Firestore and MySQL</p>
             </div>
-            <div class="skills__list grid">
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">MongoDB</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">Firestore</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__titles">
-                  <h3 class="skills__name">MySQL</h3>
-                </div>
-                <div class="skills__bar"></div>
-              </div>
-              
-            </div>
-          </div>
+            
+            
         </div>
 
+    </section>
 
-      </section>
 
-     
+    <!--  projects section -->
 
-      <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">My Projects</h2>
-        <span class="section__subtitle">Most recent work</span>
+    <section id="project" class="pt-40 px-20 sm:px-32">
+        <h3 class="text-slate-500 text-center mt-2 font-Ovo dark:text-slate-300">My Projects</h3>
+        <h2 class="text-5xl font-semibold text-center font-Ovo">Most recent work</h2>
 
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
+        <div class="pt-16 grid gap-10 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 
+        md:gap-6 justify-items-center items-center dark:text-black">
+        <!-- <div class="pt-16 flex flex-col space-y-6 md:flex-row md:space-x-10 md:space-y-0 md:flex-wrap"> -->
 
-            <!--==================== PORTFOLIO 1 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/commerce.jpg"
-                alt="portfolio"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">E-commerce App</h3>
-                <p class="portfolio__description">
-                  Ecommerce website built using Next.js, Tailwind CSS, and Strapi. The application allows users to browse categories, add items to their shopping cart, and proceed to checkout. Payments are handled via Stripe.
-                </p>
-                <a
-                  href="https://nextjs-ecommerce-gstore.vercel.app"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
+            <a href="https://nextjs-ecommerce-estore.vercel.app" target="_blank"
+             class="group aspect-square bg-[url('/dist/images/commerce.jpg')] 
+            bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
 
-            <!--==================== PORTFOLIO 2 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/restaurant-img2.PNG"
-                alt="portfolio"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Restaurant</h3>
-                <p class="portfolio__description">
-                  Landing page restaurant created to showcase various web development skills using HTML, Tailwind CSS, and JavaScript.
-                </p>
-                <a
-                  href="https://restaurant-oud.vercel.app/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
+                <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
+                w-[80%] md:w-[90%] h-[120px] flex rounded-lg py-6 px-3 justify-between items-center 
+                group-hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <h6 class="font-bold text-wrap">Ecommerce project</h6>
+                        <p class="text-xs">Next.js, Tailwind CSS, and Strapi.</p>
+                    </div>
+                    <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
+                    group-hover:text-white"><i class="ri-arrow-right-up-line text-lg"></i></button>
+                </div>
+           </a>
 
-            <!--==================== PORTFOLIO 3 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/movie.jpg"
-                alt="portfolio"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Movie App</h3>
-                <p class="portfolio__description">
-                  Web application built using Next.js, Firebase and REST APIs that allows users to explore and search for movies with authentication.
-                </p>
-                <a
-                  href="https://movie-explorer-inky.vercel.app/"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
+           <a href="https://restaurant-oud.vercel.app/" target="_blank"
+           class="group aspect-square bg-[url('/dist/images/restaurant-img2.PNG')] 
+            bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
+                <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
+                w-[80%] md:w-[90%] h-[120px] flex rounded-lg py-6 px-3 justify-between items-center 
+                group-hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <h6 class="font-bold">Restaurant</h6>
+                        <p class="text-xs">Html, Tailwind CSS and JavaScript</p>
+                    </div>
+                    <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
+                    group-hover:text-white"><i class="ri-arrow-right-up-line text-xl"></i></button>
+                </div>
+           </a>
 
-            <!--==================== PORTFOLIO 4 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/lebon.webp"
-                alt="portfolio"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Customer Management System App</h3>
-                <p class="portfolio__description">
-                  Web-based application built using Express.js, MongoDB, HTML (EJS), CSS, Bootstrap, and JavaScript. It allows users to manage customer information with functionalities to add, view, edit, search, and delete customers.
-                </p>
-                <a
-                  href="https://customer-management-system-pitq.onrender.com"
-                  class="button button--flex button--small portfolio__button"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
+           <a href="https://movie-explorer-inky.vercel.app/" target="_blank"
+           class="group aspect-square bg-[url('/dist/images/movie.jpg')] 
+            bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
+                <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
+                w-[80%] md:w-[90%] h-[120px] flex rounded-lg py-6 px-3 justify-between items-center 
+                group-hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <h6 class="font-bold">Movie project</h6>
+                        <p class="text-xs">Next.js, Firebase and REST APIs</p>
+                    </div>
+                    <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
+                    group-hover:text-white"><i class="ri-arrow-right-up-line text-xl"></i></button>
+                </div>
+           </a>
 
+           <a href="https://customer-management-system-pitq.onrender.com" target="_blank"
+           class="group aspect-square bg-[url('/dist/images/lebon.webp')] 
+            bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
+                <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
+                w-[80%] md:w-[90%] h-[120px] flex rounded-lg py-6 px-3 justify-between items-center 
+                group-hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <h6 class="font-bold">Client Manager</h6>
+                        <p class="text-xs">Express.js, MongoDB, HTML (EJS), CSS, Bootstrap, and JavaScript.</p>
+                    </div>
+                    <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
+                    group-hover:text-white"><i class="ri-arrow-right-up-line text-xl"></i></button>
+                </div>
+           </a>
            
-            
-          </div>
-
-          <!-- Add Arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
         </div>
-      </section>
+    </section>
 
-      <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
+    <!--  contact section  -->
 
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-phone contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">+212718298942</span>
-              </div>
-            </div>
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle"
-                  >anasoudsassi@gmail.com</span
-                >
-              </div>
-            </div>
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Morocco</span>
-              </div>
-            </div>
-          </div>
-          <form
-            action="https://formspree.io/f/mnnadyar"
-            method="POST"
-            class="contact__form grid"
-          >
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
-                <input
-                  type="text"
-                  class="contact__input"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
-                <input
-                  type="email"
-                  class="contact__input"
-                  name="email"
-                  required
-                />
-              </div>
-            </div>
+    <section id="contact" class="pt-40 px-20 sm:px-32 max-w-[900px] mx-auto">
+        <h3 class="text-slate-500 text-center mt-2 font-Ovo dark:text-slate-300">Connect with me</h3>
+        <h2 class="text-5xl font-semibold text-center font-Ovo">Get in touch </h2>
+        <p class="text-center pt-6 font-Ovo">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
 
-            <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input
-                type="text"
-                class="contact__input"
-                name="project"
-                required
-              />
+        <form action="https://formspree.io/f/mnnadyar" method="POST"
+        class="w-full pt-16 flex flex-col space-y-6 items-center">
+            <div class="w-full grid gap-y-6 sm:grid-cols-2 sm:gap-x-5">
+                <input type="text" placeholder="Enter your name" name="name" required
+                class="px-4 py-3 border-2 rounded-lg">
+                <input type="email" placeholder="Enter your email" name="email" required
+                class="px-4 py-3 border-2 rounded-lg">
             </div>
-            <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-                name="message"
-                required
-              ></textarea>
-            </div>
+            <textarea type="text" placeholder="Enter your message" name="message" required 
+            class="px-4 py-3 border-2 rounded-lg h-[200px] w-full"></textarea>
+            <button>
+                <a type="submit" class="border px-6 py-2.5 rounded-full shadow-sm bg-black text-white
+                hover:shadow-sm lg:flex items-center gap-x-1
+                dark:hover:bg-white dark:hover:text-black dark:transition ease-in-out">Submit now <i class="ri-arrow-right-up-line text-xl"></i></a>
+            </button>
+        </form>
+        
+    </section>
 
-            <div>
-              <button type="submit" class="button button--flex button--submit">
-                Send Message
-                <i class="uil-message button__icon"></i>
-              </button>
+
+    <!--  footer section  -->
+
+    <footer class="pt-20 px-20 sm:px-32 pb-6">
+        <hr class="w-full border border-slate-300 mb-6">
+        <div class="flex flex-col items-center space-y-4 font-semibold 
+        md:flex-row md:space-y-0 md:justify-between">
+            <p>&copy; 2024 Anas. All rights reserved.</p>
+            <div class="flex  space-x-7">
+                <a href="https://www.linkedin.com/in/anas-oudsassi/"
+                target="_blank">LinkedIn</a>
+                <a href="https://github.com/Anasoud1/"
+                target="_blank">GitHub</a>
             </div>
-          </form>
         </div>
-      </section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          
-          <ul class="footer__links">
-            <li>
-              <a href="#skills" class="footer__link">Skills</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Projets</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            
-            <a
-              href="https://www.linkedin.com/in/anas-oudsassi/"
-              target="_blank"
-              
-            >
-              <i class="uil uil-linkedin footer__social"></i>
-            </a>
-            
-            <a
-              href="https://github.com/Anasoud1/"
-              target="_blank"
-            >
-              <i class="uil uil-github-alt footer__social"></i>
-            </a>
-          </div>
-        </div>
-
-        <p class="footer__copy">&#169;All right reserved</p>
-      </div>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+    <script>
+        const menuBtn = document.getElementById('menu-btn')
+        const navBar = document.getElementById('navbar')
+        const navBtns = document.querySelectorAll('#nav-btn')
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+        const nav = document.getElementById("nav");
+        const navBorder = document.getElementById('navBorder')
 
-    <!--==================== MAIN JS ====================-->
-    <script src="assets/js/main.js"></script>
-  </body>
+
+        menuBtn.addEventListener('click', () => {
+            navBar.classList.toggle('hidden')
+        })
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                navBar.classList.toggle('hidden')
+            })
+        })
+
+        window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) {
+        nav.classList.add("shadow-lg");
+        navBorder.classList.remove('border')
+
+        } else {
+        nav.classList.remove("shadow-lg");
+        navBorder.classList.add('border')
+        }
+    });
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        } else {
+        document.documentElement.classList.remove('dark')
+        }
+
+        function toggleTheme(){
+            document.documentElement.classList.toggle('dark')
+            if (document.documentElement.classList.contains('dark')){
+                localStorage.theme = 'dark'
+            } else{
+                localStorage.theme = 'light'
+            }
+        }
+
+    </script>
+</body>
 </html>
