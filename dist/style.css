@@ -632,8 +632,8 @@ video {
   aspect-ratio: 1 / 1;
 }
 
-.h-\[120px\] {
-  height: 120px;
+.h-\[130px\] {
+  height: 130px;
 }
 
 .h-\[200px\] {
@@ -646,10 +646,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[130px\] {
-  height: 130px;
 }
 
 .w-\[80\%\] {
@@ -943,11 +939,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1146,10 +1137,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:h-\[\] {
-    height: ;
-  }
-
   .sm\:h-\[100px\] {
     height: 100px;
   }
