@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
 
-    
+
     <title>Porfolio</title>
 </head>
+
 <body class="font-Outfit dark:bg-darkTheme dark:text-white">
 
     <!-- navbar section -->
-    
+
     <div class="fixed w-full -z-10 opacity-20 dark:hidden">
         <img src="./dist/images/header3-grad.webp" alt="header" class="w-full h-screen object-cover">
         <!-- <img src="./dist/images/header-gradient.webp" alt="header" class="w-full h-screen object-cover "> -->
     </div>
 
     <nav id="nav" class="py-4 px-10 md:px-32 w-full fixed backdrop-blur-3xl z-50">
-       
+
         <div class="flex justify-between items-center">
             <a href="#home" class="text-2xl font-bold">AO.</a>
             <ul id="navBorder" class="hidden md:flex border px-12 py-3 rounded-full shadow-sm 
@@ -39,12 +41,13 @@
                 <button>
                     <a href="#contact" class="hidden border px-6 py-2.5 rounded-full shadow-sm
                     hover:shadow-lg lg:flex items-center gap-x-1
-                    dark:hover:bg-white dark:hover:text-black dark:transition ease-in-out">Contact <i class="ri-arrow-right-up-line text-xl"></i></a>
+                    dark:hover:bg-white dark:hover:text-black dark:transition ease-in-out">Contact <i
+                            class="ri-arrow-right-up-line text-xl"></i></a>
                 </button>
                 <button id="menu-btn" class="md:hidden">
                     <i class="ri-menu-3-line text-2xl"></i>
                 </button>
-                
+
             </div>
         </div>
 
@@ -74,7 +77,8 @@
             <h5 class="text-xl font-Ovo">Hi! I'm Anas Oudsassi</h5>
             <h1 class="text-4xl font-bold font-Ovo">Fullstack Developer</h1>
             <p class="text-center leading-relaxed max-w-[600px] font-Ovo text-sm md:text-base">
-                Energetic full-stack developer with a passion for creating dynamic and engaging user experiences, skilled in both frontend and backend development.
+                Energetic full-stack developer with a passion for creating dynamic and engaging user experiences,
+                skilled in both frontend and backend development.
             </p>
             <!-- <div class="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
                 <button>
@@ -85,10 +89,16 @@
                     <a href="#contact" class="px-8 py-4 border-2 border-gray-400 border-solid rounded-full flex gap-x-2">my resume <i class="ri-download-2-line"></i></a>
                 </button>
             </div> -->
-            <button>
+            <!-- <button>
                 <a href="#contact" class="px-8 py-4 rounded-full flex gap-x-2
                 bg-gradient-to-tr from-[#b820e6] to-[#da7d20] text-white 
                 items-center text-sm md:text-base">contact me <i class="ri-arrow-right-line"></i></a>
+            </button> -->
+            <button>
+                <a href="#contact" class="border-2 px-8 py-4 rounded-full shadow-sm bg-black text-white
+                hover:shadow-sm lg:flex items-center gap-x-1
+                dark:hover:bg-white dark:hover:text-black dark:transition 
+                ease-in-out text-sm md:text-base">contact me <i class="ri-arrow-right-line"></i></a>
             </button>
         </div>
     </section>
@@ -98,23 +108,25 @@
     <section id="about" class="pt-40 px-20 sm:px-32 text-center">
         <h3 class="text-slate-500 font-Ovo dark:text-slate-300">Introduction</h3>
         <h2 class="text-3xl md:text-5xl font-semibold font-Ovo">About me</h2>
-        
+
         <!-- <div class="mt-6 flex flex-col items-center justify-center space-y-8 md:text-left md:flex-row md:space-x-10"> -->
         <div class="mt-16 grid  gap-y-6 lg:grid-cols-2 lg:items-center md:gap-x-16">
             <div class="flex justify-center  lg:justify-end">
-                <img src="./dist/images/about.jpg" alt="about" class="rounded-lg w-full h-auto md:max-w-[400px] object-cover">
+                <img src="./dist/images/about.jpg" alt="about"
+                    class="rounded-lg w-full h-auto md:max-w-[400px] object-cover">
             </div>
             <div class="flex flex-col items-center lg:items-start space-y-8">
                 <p class="max-w-[500px] text-center lg:text-left font-Ovo
-                text-sm md:text-base ">Full-stack developer with experience building websites and web applications. I specialize in frontend development using Next.js, Tailwind CSS, and HTML. With a strong background in backend development.</p>
+                text-sm md:text-base ">Full-stack developer with experience building websites and web applications. I
+                    specialize in frontend development using Next.js, Tailwind CSS, and HTML. With a strong background
+                    in backend development.</p>
                 <button class="self-center lg:self-start">
-                    <a  download="" href="./dist/pdf/Anas_Oudsassi.pdf"
-                    class="px-8 py-4 border-2 border-gray-400 border-solid 
+                    <a download="" href="./dist/pdf/Anas_Oudsassi.pdf" class="px-8 py-4 border-2 border-gray-400 dark:border-white border-solid 
                     rounded-full flex gap-x-2 dark:hover:bg-white dark:hover:text-black dark:transition 
                     ease-in-out text-sm md:text-base">my resume <i class="ri-download-2-line"></i></a>
                 </button>
             </div>
-            
+
         </div>
     </section>
 
@@ -138,7 +150,8 @@
             dark:hover:bg-darkHover dark:hover:shadow-white">
                 <i class="ri-file-code-line text-2xl text-slate-500 font-bold dark:text-slate-300"></i>
                 <h5 class="font-bold">Frameworks</h5>
-                <p class="text-gray-600 text-sm dark:text-slate-300">Next js, Express js, Tailwind Css, Bootstrap and Flask</p>
+                <p class="text-gray-600 text-sm dark:text-slate-300">Next js, Express js, Tailwind Css, Bootstrap and
+                    Flask</p>
             </div>
             <div class="py-8 px-4 border-2 rounded-lg flex flex-col space-y-2 cursor-pointer 
             hover:bg-lightHover hover:shadow-black hover:-translate-y-1 transition ease-in-out
@@ -147,8 +160,8 @@
                 <h5 class="font-bold">Databases</h5>
                 <p class="text-gray-600 text-sm dark:text-slate-300">MongoDB, Firestore and MySQL</p>
             </div>
-            
-            
+
+
         </div>
 
     </section>
@@ -162,26 +175,44 @@
 
         <div class="pt-16 grid gap-10 xl:grid-cols-4 lg:grid-cols-2
         lg:gap-6 justify-items-center items-center dark:text-black">
-        <!-- <div class="pt-16 flex flex-col space-y-6 md:flex-row md:space-x-10 md:space-y-0 md:flex-wrap"> -->
+            <!-- <div class="pt-16 flex flex-col space-y-6 md:flex-row md:space-x-10 md:space-y-0 md:flex-wrap"> -->
 
-            <a href="https://nextjs-ecommerce-estore.vercel.app" target="_blank"
-             class="group aspect-square bg-[url('/dist/images/commerce.jpg')] 
-            bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
+            <a href="https://ecommerce-eshop-nextjs.vercel.app/" target="_blank" class="group aspect-square bg-[url('/dist/images/website.PNG')] 
+                bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
+
+                <!-- Dark Overlay -->
+                <div class="absolute inset-0 bg-black opacity-30  rounded-lg"></div>
 
                 <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
-                w-[80%] md:w-[90%] h-[130px] sm:h-[100px] flex rounded-lg py-6 px-3 justify-between items-center 
-                group-hover:-translate-y-1 transition duration-300">
+            w-[80%] md:w-[90%] h-[130px] sm:h-[100px] flex rounded-lg py-6 px-3 justify-between items-center 
+            group-hover:-translate-y-1 transition duration-300 z-10">
                     <div>
-                        <h6 class="font-bold text-wrap">Ecommerce project</h6>
+                        <h6 class="font-bold text-wrap">Clothing Ecommerce</h6>
+                        <p class="text-xs">Next.js, Tailwind CSS, Express and MongoDB.</p>
+                    </div>
+                    <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
+            group-hover:text-white"><i class="ri-arrow-right-up-line text-lg"></i></button>
+                </div>
+            </a>
+
+
+            <a href="https://nextjs-ecommerce-estore.vercel.app" target="_blank" class="group aspect-square bg-[url('/dist/images/commerce.jpg')] 
+          bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
+
+                <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
+              w-[80%] md:w-[90%] h-[130px] sm:h-[100px] flex rounded-lg py-6 px-3 justify-between items-center 
+              group-hover:-translate-y-1 transition duration-300">
+                    <div>
+                        <h6 class="font-bold text-wrap">Ecommerce Store</h6>
                         <p class="text-xs">Next.js, Tailwind CSS, and Strapi.</p>
                     </div>
                     <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
-                    group-hover:text-white"><i class="ri-arrow-right-up-line text-lg"></i></button>
+                  group-hover:text-white"><i class="ri-arrow-right-up-line text-lg"></i></button>
                 </div>
-           </a>
+            </a>
 
-           <a href="https://restaurant-oud.vercel.app/" target="_blank"
-           class="group aspect-square bg-[url('/dist/images/restaurant-img2.PNG')] 
+
+            <a href="https://restaurant-oud.vercel.app/" target="_blank" class="group aspect-square bg-[url('/dist/images/restaurant-img2.PNG')] 
             bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
                 <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
                 w-[80%] md:w-[90%] h-[130px] sm:h-[100px] flex rounded-lg py-6 px-3 justify-between items-center 
@@ -193,10 +224,9 @@
                     <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
                     group-hover:text-white"><i class="ri-arrow-right-up-line text-xl"></i></button>
                 </div>
-           </a>
+            </a>
 
-           <a href="https://movie-explorer-inky.vercel.app/" target="_blank"
-           class="group aspect-square bg-[url('/dist/images/movie.jpg')] 
+            <a href="https://movie-explorer-inky.vercel.app/" target="_blank" class="group aspect-square bg-[url('/dist/images/movie.jpg')] 
             bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
                 <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
                 w-[80%] md:w-[90%] h-[130px] sm:h-[100px] flex rounded-lg py-6 px-3 justify-between items-center 
@@ -208,10 +238,9 @@
                     <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
                     group-hover:text-white"><i class="ri-arrow-right-up-line text-xl"></i></button>
                 </div>
-           </a>
+            </a>
 
-           <a href="https://customer-management-system-oud.vercel.app/" target="_blank"
-           class="group aspect-square bg-[url('/dist/images/lebon.webp')] 
+            <a href="https://customer-management-system-oud.vercel.app/" target="_blank" class="group aspect-square bg-[url('/dist/images/lebon.webp')] 
             bg-cover bg-center rounded-lg relative w-full md:max-w-[300px] lg:max-w-[400px]">
                 <div class="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 
                 w-[80%] md:w-[90%] h-[130px] sm:h-[100px] flex rounded-lg py-6 px-3 justify-between items-center 
@@ -223,8 +252,8 @@
                     <button class="px-2 py-1 border-2 rounded-full group-hover:bg-green-500 
                     group-hover:text-white"><i class="ri-arrow-right-up-line text-xl"></i></button>
                 </div>
-           </a>
-           
+            </a>
+
         </div>
     </section>
 
@@ -234,18 +263,18 @@
         <h3 class="text-slate-500 text-center mt-2 font-Ovo dark:text-slate-300">Connect with me</h3>
         <h2 class="text-3xl md:text-5xl font-semibold text-center font-Ovo">Get in touch </h2>
         <p class="text-center pt-6 font-Ovo text-sm md:text-base">
-        I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
+            I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
 
         <form action="https://formspree.io/f/mnnadyar" method="POST"
-        class="w-full pt-16 flex flex-col space-y-6 items-center dark:text-black">
+            class="w-full pt-16 flex flex-col space-y-6 items-center dark:text-black">
             <div class="w-full grid gap-y-6 sm:grid-cols-2 sm:gap-x-5">
                 <input type="text" placeholder="Enter your name" name="name" required
-                class="w-full px-4 py-3 border-2 rounded-lg">
+                    class="w-full px-4 py-3 border-2 rounded-lg">
                 <input type="email" placeholder="Enter your email" name="email" required
-                class="w-full px-4 py-3 border-2 rounded-lg">
+                    class="w-full px-4 py-3 border-2 rounded-lg">
             </div>
-            <textarea type="text" placeholder="Enter your message" name="message" required 
-            class="px-4 py-3 border-2 rounded-lg h-[200px] w-full"></textarea>
+            <textarea type="text" placeholder="Enter your message" name="message" required
+                class="px-4 py-3 border-2 rounded-lg h-[200px] w-full"></textarea>
             <button>
                 <a type="submit" class="border px-6 py-2.5 rounded-full shadow-sm bg-black text-white
                 hover:shadow-sm lg:flex items-center gap-x-1
@@ -253,7 +282,7 @@
                 ease-in-out text-sm md:text-base">Submit now <i class="ri-arrow-right-up-line text-xl"></i></a>
             </button>
         </form>
-        
+
     </section>
 
 
@@ -265,10 +294,8 @@
         md:flex-row md:space-y-0 md:justify-between">
             <p class="text-center">&copy; 2024 Anas. All rights reserved.</p>
             <div class="flex  space-x-7">
-                <a href="https://www.linkedin.com/in/anas-oudsassi/"
-                target="_blank">LinkedIn</a>
-                <a href="https://github.com/Anasoud1/"
-                target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/anas-oudsassi/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Anasoud1/" target="_blank">GitHub</a>
             </div>
         </div>
     </footer>
@@ -292,32 +319,33 @@
             })
         })
 
-        window.addEventListener("scroll", function() {
-        if (window.scrollY > 50) {
-        nav.classList.add("shadow-lg");
-        navBorder.classList.remove('border')
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 50) {
+                nav.classList.add("shadow-lg");
+                navBorder.classList.remove('border')
 
-        } else {
-        nav.classList.remove("shadow-lg");
-        navBorder.classList.add('border')
-        }
-    });
+            } else {
+                nav.classList.remove("shadow-lg");
+                navBorder.classList.add('border')
+            }
+        });
 
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
+            document.documentElement.classList.add('dark')
         } else {
-        document.documentElement.classList.remove('dark')
+            document.documentElement.classList.remove('dark')
         }
 
-        function toggleTheme(){
+        function toggleTheme() {
             document.documentElement.classList.toggle('dark')
-            if (document.documentElement.classList.contains('dark')){
+            if (document.documentElement.classList.contains('dark')) {
                 localStorage.theme = 'dark'
-            } else{
+            } else {
                 localStorage.theme = 'light'
             }
         }
 
     </script>
 </body>
+
 </html>
